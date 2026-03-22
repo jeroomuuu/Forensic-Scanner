@@ -32,7 +32,7 @@ Get the https://openmc.org/data/#endf-b-viii-1 pack
     tar -xJf 9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
     look for the cross_sections.xml find location after extracting
 
-    (if you cannot download from the exact link, go find it at https://openmc.org/data/)
+    ( if you cannot download from the exact link, go find it at https://openmc.org/data/ )
 
 ## Step 1.4: Tell the enviroment where to find it & tell your startup bash as well
 
