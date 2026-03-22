@@ -28,13 +28,16 @@ It is highly recommended to deploy this on a Linux machine (Ubuntu) using Conda.
 
 Get the https://openmc.org/data/#endf-b-viii-1 pack
     
-    wget https://anl.box.com/shared/static/6qr7jezzihkj9p9esl5jn19qgpujyjyz.xz
-    tar -xJf 6qr7jezzihkj9p9esl5jn19qgpujyjyz.xz
+    wget https://anl.box.com/shared/static/9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
+    tar -xJf 9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
+    look for the cross_sections.xml find location after extracting
+
+    (if you cannot download from the exact link, go find it at https://openmc.org/data/)
 
 ## Step 1.4: Tell the enviroment where to find it & tell your startup bash as well
 
-    export OPENMC_CROSS_SECTIONS=/path-to-file/endfb-vii.1-hdf5/cross_sections.xml
-    echo 'export OPENMC_CROSS_SECTIONS="/path-to-file/endfb-vii.1-hdf5/cross_sections.xml"' >> ~/.bashrc
+    export OPENMC_CROSS_SECTIONS=/path-to-file/cross_sections.xml
+    echo 'export OPENMC_CROSS_SECTIONS="/path-to-file/cross_sections.xml"' >> ~/.bashrc
 
 
 ## Usage & Startup Syntax
