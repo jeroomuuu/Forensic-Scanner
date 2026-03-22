@@ -30,7 +30,7 @@ Get the OpenMC endf-b-vii-1 pack
     
     wget https://anl.box.com/shared/static/9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
     tar -xJf 9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
-    look for the cross_sections.xml find location after extracting
+    look for the cross_sections.xml location after extracting
 
     ( if you cannot download from the exact link, go find it at https://openmc.org/data/ )
 
