@@ -1,5 +1,7 @@
 # Forensic Scanner V1: Monte Carlo PFTNA Engine
 
+<img width="600" height="auto" alt="WeatherDashboard-Main" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Visual.png" />
+
 A high-performance, dual-mode (Macro/Micro) Pulsed Fast Thermal Neutron Analysis (PFTNA) simulation engine. 
 This system uses OpenMC to fire 14 MeV neutrons into complex 3D CSG geometries (like shielded luggage) 
 tracks subatomic particle collisions, and uses a Non-Negative Least Squares (NNLS) solver to mathematically 
