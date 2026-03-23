@@ -26,10 +26,10 @@ It is highly recommended to deploy this on a Linux machine (Ubuntu) using Conda.
 
 ## Step 1.3: Get the Nuclear Data
 
-Get the OpenMC endf-b-vii-1 pack
+Get the OpenMC endf-b-viii-1 pack
     
-    wget https://anl.box.com/shared/static/9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
-    tar -xJf 9igk353zpy8fn9ttvtrqgzvw1vtejoz6.xz
+    wget https://anl.box.com/shared/static/6qr7jezzihkj9p9esl5jn19qgpujyjyz.xz
+    tar -xJf 6qr7jezzihkj9p9esl5jn19qgpujyjyz.xz
     look for the cross_sections.xml location after extracting
 
     ( if you cannot download from the exact link, go find it at https://openmc.org/data/ )
