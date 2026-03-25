@@ -15,19 +15,19 @@ This project requires a specific scientific Python stack and the official OpenMC
 It is highly recommended to deploy this on a Linux machine (Ubuntu) using Conda.
 
 
-## Step 1.1: Install Miniconda
+### Step 1.1: Install Miniconda
 
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh -b
 
-## Step 1.2: Build the enviroment
+### Step 1.2: Build the enviroment
 
     source ~/miniconda3/bin/activate
     conda create -n physics_wsl python=3.11 -y
     conda activate physics_wsl
     conda install -c conda-forge openmc pandas scipy matplotlib tqdm -y
 
-## Step 1.3: Get the Nuclear Data
+### Step 1.3: Get the Nuclear Data
 
 Get the OpenMC endf-b-viii-1 pack & optional depletion data
 look for the cross_sections.xml location after extracting
@@ -40,10 +40,10 @@ might as well get the depletion data - you might need it later
     wget -O thermal.xml https://anl.box.com/shared/static/q6ev8pl7xct179ke7kq148smde8gzni6.xml
     wget -O fast.xml https://anl.box.com/shared/static/n0pkqe66uotskoljr93szvjyvtvycgze.xml
 
-#### if you cannot download from the exact link, go find it at https://openmc.org/data/
+###### if you cannot download from the exact link, go find it at https://openmc.org/data/
 
 
-## Step 1.4: Tell the enviroment where to find it & tell your startup bash as well
+### Step 1.4: Tell the enviroment where to find it & tell your startup bash as well
 
     export OPENMC_CROSS_SECTIONS=/path-to-file/cross_sections.xml
     echo 'export OPENMC_CROSS_SECTIONS="/path-to-file/cross_sections.xml"' >> ~/.bashrc
@@ -55,17 +55,17 @@ The script operates in two phases: Matrix Generation (building the physics libra
 You can run these in either macro (full spectrum) or micro (ROI-Barcoded) modes
 
 
-## Step 2.1: Build the Transformation Matrix
+### Step 2.1: Build the Transformation Matrix
 
     python forensic-scanner-1.0.py --build-matrix --mode micro
     python forensic-scanner-1.0.py --build-matrix --mode macro
 
-## Step 2.2: Run a detection scan
+### Step 2.2: Run a detection scan
 
     python forensic-scanner-1.0.py --solve Threat_NQ --use-csg --mode micro
     python forensic-scanner-1.0.py --solve Threat_NQ --use-csg --mode macro
 
-## Step 2.3: Options to check beam output visually
+### Step 2.3: Options to check beam output visually
 
 
     python forensic-scanner-1.0.py --check-geometry fan
@@ -95,4 +95,4 @@ and increase the resolution bins.
 
 
 
-#### Note: If you change the settings, you must run --build-matrix again so your library matches your new resolution!
+###### Note: If you change the settings, you must run --build-matrix again so your library matches your new resolution!
