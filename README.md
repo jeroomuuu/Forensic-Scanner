@@ -75,7 +75,7 @@ You can run these in either macro (full spectrum) or micro (ROI-Barcoded) modes
 ## Tweaking Settings
 
 If you need to change the resolution, particle count, ROIs; 
-open forensic-scanner-1.0.py and modify the CONFIG dictionary
+open the script and modify the CONFIG dictionary
 
     'sigma_certainty': 4.0,           # Threshold for triggering Stoichiometric Anomaly warnings
     'particles_per_batch': 500000,    # THE CPU SLIDER: Change to 50,000,000 for Enterprise HPC runs
