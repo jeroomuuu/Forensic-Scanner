@@ -24,6 +24,6 @@ V1.3
 - 40×40×20 spatial mesh
 - One beautiful timestamped GIF sweep + total-flux frame
 - Full 5D .npz files saved automatically
-- Time bins act as neutron-energy proxy (thanks to your pulsed source)
+- Time bins act as neutron-energy proxy (thanks to pulsed source)
 - Timestamped output
 
