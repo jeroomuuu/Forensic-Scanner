@@ -2,7 +2,7 @@
 #### V1.2a (Codename WONKY) now ready.
 
 
-###### Yes there are missing yellow bands in this image - all fixed in the update
+###### Yes there are missing yellow bands in this image - it's all fixed in the update.
 <img width="1000" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Visual.png" />
 
 A high-performance, dual-mode (Macro/Micro) Pulsed Fast Thermal Neutron Analysis (PFTNA) simulation engine. 
