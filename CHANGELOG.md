@@ -17,6 +17,7 @@ V1.2:
 
 V1.3 
 
+- Delayed gamma now works - doesnt need much
 - 14 crisp per-MeV PNGs (no more 6–7 MeV clumping)
 - 14 neutron energy groups (1 MeV bins 1–14 MeV)
 - 141 photon bins (100 keV resolution 0–14 MeV)
