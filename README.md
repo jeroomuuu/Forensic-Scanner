@@ -37,8 +37,8 @@ look for the cross_sections.xml location after extracting
 
 might as well get the depletion data - you might need it later
 
-    wget https://anl.box.com/shared/static/q6ev8pl7xct179ke7kq148smde8gzni6.xml thermal.xml
-    wget https://anl.box.com/shared/static/n0pkqe66uotskoljr93szvjyvtvycgze.xml fast.xml
+    wget -O thermal.xml https://anl.box.com/shared/static/q6ev8pl7xct179ke7kq148smde8gzni6.xml
+    wget -O fast.xml https://anl.box.com/shared/static/n0pkqe66uotskoljr93szvjyvtvycgze.xml
 
 #### if you cannot download from the exact link, go find it at https://openmc.org/data/
 
