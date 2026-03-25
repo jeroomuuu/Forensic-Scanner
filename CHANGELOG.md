@@ -27,3 +27,15 @@ V1.3
 - Time bins act as neutron-energy proxy (thanks to pulsed source)
 - Timestamped output
 
+V1.4 
+
+- real cascade gamma from thermal neutron capture on nitrogen-14¹⁴N(n,γ)¹⁵N
+- also several lower-energy cascade gammas from the de-excitation of higher excited states in ¹⁵N
+- Threat_NQ is nitrogen-rich (CH₄N₄O₂) and the borated-poly collar -> Line now stands out clearly in the delayed/thermal bin
+- Stuff I forgot about
+
+V1.5
+
+- Beautiful orange-shaded Fe K X-ray cluster in the new low-energy inset
+- Pulsed D-T, 5D layered tallies, GIFs, per-MeV PNGs, N-16 injection, and delayed low-energy X-ray monitoring
+- All global variables and unpacking fixed (no more NameError hell)
