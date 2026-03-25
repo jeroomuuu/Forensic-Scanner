@@ -40,7 +40,8 @@ might as well get the depletion data - you might need it later
     wget https://anl.box.com/shared/static/q6ev8pl7xct179ke7kq148smde8gzni6.xml thermal.xml
     wget https://anl.box.com/shared/static/n0pkqe66uotskoljr93szvjyvtvycgze.xml fast.xml
 
-### if you cannot download from the exact link, go find it at https://openmc.org/data/
+#### if you cannot download from the exact link, go find it at https://openmc.org/data/
+
 
 ## Step 1.4: Tell the enviroment where to find it & tell your startup bash as well
 
