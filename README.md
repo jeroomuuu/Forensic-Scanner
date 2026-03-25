@@ -1,4 +1,4 @@
-# Forensic Scanner V1.2a (wonky): Monte Carlo PFTNA Engine
+# Forensic Scanner V1.3 (blurp): Monte Carlo PFTNA Engine
 
 <img width="1000" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Visual.png" />
 
