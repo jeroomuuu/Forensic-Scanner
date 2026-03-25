@@ -31,7 +31,7 @@ V1.4
 
 - real cascade gamma from thermal neutron capture on nitrogen-14¹⁴N(n,γ)¹⁵N
 - also several lower-energy cascade gammas from the de-excitation of higher excited states in ¹⁵N
-- Threat_NQ is nitrogen-rich (CH₄N₄O₂) and the borated-poly collar -> Line now stands out clearly in the delayed/thermal bin
+- Threat_NQ is nitrogen-rich (CH₄N₄O₂) and the borated-poly C/M now stands out clearly in the delayed/thermal bin
 - Stuff I forgot about
 
 V1.5
