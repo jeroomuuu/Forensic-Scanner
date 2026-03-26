@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ==============================================================================
-# 🧠 FORENSIC SCANNER V1.8 ALPHA
+# 🧠 FORENSIC SCANNER V1.9 ALPHA
 # Pulsed D-T + N-16 + 5D Layered + Delayed Low-Energy X-rays + Bayesian NNFL Layer
 # ==============================================================================
 
