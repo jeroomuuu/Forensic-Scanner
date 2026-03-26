@@ -565,7 +565,7 @@ def solve_mystery_target(mystery_target_name, Matrix_A=None, labels=None, save_p
             # If the Oxygen/Carbon ratio is suspiciously high, and there is almost NO Nitrogen...
         if o_c_ratio > 0.85 and n_pct < 0.2: 
                 threat_detected = True
-                print(f"\n👻 GHOST ANOMALY: Abnormal Fast O/C ratio ({o_c_ratio:.2f}) with ZERO Nitrogen! Peroxide threat (TATP) detected.")
+    print(f"\n👻 GHOST ANOMALY: Abnormal Fast O/C ratio ({o_c_ratio:.2f}) with ZERO Nitrogen! Peroxide threat (TATP) detected.")
                 
     print(f"------------------------------------------------------------\n 📉 Mathematical Residual (Unexplained Noise): {residue:.6f}")
     print("\n🔴 STATUS: RED ALARM - EXPLOSIVE SIGNATURE UNMIXED" if threat_detected else "\n🟢 STATUS: GREEN - No threat detected")
