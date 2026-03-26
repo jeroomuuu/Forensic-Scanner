@@ -48,18 +48,21 @@ V1.6:
 - Tuned & expanded low-energy ROIs (x-ray and photon)
 - Something something - i forgot
 
-V1.7:
+V1.7: ( latest stable )
 
 - Added Cu, Zn, Ga X-ray clusters + more Fe-59 lines
 - Finetuned a tiny bit more
 
-V1.8:
+V1.8: ( borked )
 
 - Bayesian_nnfl_analysis() function present and called correctly
 - Dirichlet posterior + 95% credible intervals printing
 - Threat probability warning for >80%
 - No breakage to any previous features
 
+V1.9 ( More borked )
+
+- ???
 
 ###### python forensic-scanner-1.8.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
 
