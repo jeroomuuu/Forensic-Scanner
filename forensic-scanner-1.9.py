@@ -541,7 +541,7 @@ def solve_mystery_target(mystery_target_name, Matrix_A=None, labels=None, save_p
         if mode == 'macro' and label in ['TNT', 'RDX', 'PETN', 'TATP', 'Threat_NQ'] and pct > 3.0: 
             threat_detected = True
 
-        if mode == 'micro':
+if mode == 'micro':
         n_pct = percent_dict.get('Pure_N', 0.0)
         o_pct = percent_dict.get('Pure_O', 0.0)
         
@@ -563,10 +563,10 @@ def solve_mystery_target(mystery_target_name, Matrix_A=None, labels=None, save_p
         if c_counts > 0:
             o_c_ratio = o_counts / c_counts
             # If the Oxygen/Carbon ratio is suspiciously high, and there is almost NO Nitrogen...
-        if o_c_ratio > 0.85 and n_pct < 0.2: 
+            if o_c_ratio > 0.85 and n_pct < 0.2: 
                 threat_detected = True
-    print(f"\n👻 GHOST ANOMALY: Abnormal Fast O/C ratio ({o_c_ratio:.2f}) with ZERO Nitrogen! Peroxide threat (TATP) detected.")
-                
+                print(f"\n👻 GHOST ANOMALY: Abnormal Fast O/C ratio ({o_c_ratio:.2f}) with ZERO Nitrogen! Peroxide threat (TATP) detected.")
+
     print(f"------------------------------------------------------------\n 📉 Mathematical Residual (Unexplained Noise): {residue:.6f}")
     print("\n🔴 STATUS: RED ALARM - EXPLOSIVE SIGNATURE UNMIXED" if threat_detected else "\n🟢 STATUS: GREEN - No threat detected")
     print("============================================================")
