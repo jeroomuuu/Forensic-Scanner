@@ -573,7 +573,7 @@ if mode == 'micro':
 
     plot_pftna_spectra(mean_g, gamma_energies, mystery_target_name, mean_low=mean_low if use_delayed_low else None)
     if use_layers and layered_5d is not None: plot_layered_flux(layered_5d, neutron_edges, photon_edges, mystery_target_name)
-
+        
 # ==========================================
 # 9. VISUALIZATION
 # ==========================================
