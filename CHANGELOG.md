@@ -67,12 +67,17 @@ V1.8:
 
 ### Roadmap
 
-
-V1.9: [Proposed Updates]
+#### [Proposed Updates]
 
 - DAGMC CAD import for real suitcase STL files in instead of CSG boxes
-
-V2.0: [Proposed Updates]
-
 - Cluster watchdog script for Vast.ai API (one VM per element, auto-assemble etc etc).
 
+- Full PyMC MCMC upgrade ->
+- Probabilistic inference layer (PyMC, Pyro, TensorFlow Probability, etc.)
+
+- Models with:
+
+- Posterior distributions instead of point estimates
+- Credible intervals on every material percentage
+- Proper uncertainty propagation
+- Threat probability with uncertainty (e.g. “92% ± 4% chance of explosive”)
