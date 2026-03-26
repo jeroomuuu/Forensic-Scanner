@@ -328,16 +328,18 @@ def delayed_low_energy_analysis(mean_low_spectrum, energies_low, threshold_sigma
     return roi_net, warnings
 
 # ==========================================
-# 6. BAYESIAN NNFL LAYER (fixed)
+# 6. BAYESIAN NNFL LAYER (fixed for SciPy)
 # ==========================================
 def bayesian_nnfl_analysis(x_nnls, Matrix_A, labels, prior_alpha=1.0):
     """Dirichlet posterior update for compositional attribution (NNFL-style)."""
     alpha_prior = np.full_like(x_nnls, prior_alpha)
     alpha_post = alpha_prior + x_nnls * 1000.0   # scaling factor for sharpness
     
-    # FIXED: Use the class method, not the frozen instance
-    mean_post = dirichlet.mean(alpha_post)
-    lower, upper = dirichlet.interval(0.95, alpha_post)
+    # CORRECTED: Create the frozen distribution first
+    post = dirichlet(alpha_post)
+    
+    mean_post = post.mean()
+    lower, upper = post.interval(0.95)
     
     print("\n[NNFL BAYESIAN POSTERIOR]")
     print("Material                  Posterior %    95% Credible Interval")
