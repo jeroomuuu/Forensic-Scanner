@@ -539,7 +539,7 @@ def solve_mystery_target(mystery_target_name, Matrix_A=None, labels=None, save_p
 
     if mode == 'micro':
         n_pct = percent_dict.get('Pure_N', 0.0); o_pct = percent_dict.get('Pure_O', 0.0)
-        if n_pct > 5.0 or (n_pct > 2.0 and o_pct > 4.0):
+        if n_pct > 0.5 or (n_pct > 0.2 and o_pct > 1.0):
             threat_detected = True
             print("\n⚠️ STOICHIOMETRIC ANOMALY: Nitrogen/Oxygen density exceeds background clutter limits!")
 
