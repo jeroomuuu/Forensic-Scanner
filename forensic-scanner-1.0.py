@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ==============================================================================
-# 🧠 DUAL-MODE NNLS TOMOGRAPHY & SCANNER V11 (Pandas + Smart Thermal + Volume)
+# 🧠 DUAL-MODE NNLS TOMOGRAPHY & SCANNER V1.0 (Pandas + Smart Thermal + Volume)
 # ==============================================================================
 
 import os
