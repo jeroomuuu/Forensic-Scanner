@@ -2,16 +2,15 @@
 
 <img width="1000" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Visual.png" />
 
-A high-performance, dual-mode (Macro/Micro) Pulsed Fast Thermal Neutron Analysis (PFTNA) simulation engine. 
+###### This system uses OpenMC to fire 14 MeV neutrons into complex 3D CSG geometries (like shielded luggage), tracks subatomic particle collisions, and uses a Non-Negative Least Squares (NNLS) solver to mathematically unmix and identify hidden explosive threats from the resulting gamma-ray spectra.
 
-This system uses OpenMC to fire 14 MeV neutrons into complex 3D CSG geometries (like shielded luggage) 
-tracks subatomic particle collisions, and uses a Non-Negative Least Squares (NNLS) solver to mathematically 
-unmix and identify hidden explosive threats from the resulting gamma-ray spectra.
+
 
 
 ## Installation & Environment Setup
 
 This project requires a specific scientific Python stack and the official OpenMC physics engine. 
+
 It is highly recommended to deploy this on a Linux machine (Ubuntu) using Conda.
 
 
@@ -52,6 +51,7 @@ might as well get the depletion data - you might need it later
 ## Usage & Startup Syntax
 
 The script operates in two phases: Matrix Generation (building the physics library) and Solving (scanning a mystery target)
+
 You can run these in either macro (full spectrum) or micro (ROI-Barcoded) modes
 
 
