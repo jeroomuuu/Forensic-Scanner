@@ -68,6 +68,10 @@ V1.9: Problems fixed
 
 V2.0: OUT NOW
 
+- All works and now building 1B particle matrices
+- For future upgrade to machine learning -> V3.0
+- Small bugfix in V2.0.1
+
 ---
 
 ### Roadmap
