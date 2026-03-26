@@ -43,20 +43,21 @@ V1.5:
 - Delayed low-energy X-ray monitoring
 - All global variables and unpacking fixed (no more NameError hell)
 
-
-#### Roadmap
-
-V1.6: [Proposed Updates]
+V1.6:
 
 - Tune & expand low-energy ROIs
 
-V1.7: [Proposed Updates]
+V1.7:
 
 - Add Cu, Zn, Ga X-ray clusters + more Fe-59 lines
 
-V1.8: [Proposed Updates]
+V1.8:
 
 - Bayesian / NNFL layer, probabilistic attribution instead of just NNLS percentages
+
+
+#### Roadmap
+
 
 V1.9: [Proposed Updates]
 
