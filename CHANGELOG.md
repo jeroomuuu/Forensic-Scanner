@@ -74,11 +74,12 @@ V2.0: OUT NOW
 
 #### [Proposed Updates]
 
-- DAGMC CAD import for real suitcase STL files in instead of CSG boxes
-- Cluster watchdog script for Vast.ai API (one VM per element, auto-assemble etc etc).
 
 - Full PyMC MCMC upgrade ->
 - Probabilistic inference layer (PyMC, Pyro, TensorFlow Probability, etc.)
+
+- DAGMC CAD import for real suitcase STL files in instead of CSG boxes
+- Cluster watchdog script for Vast.ai API (one VM per element, auto-assemble etc etc).
 
 - Models with:
 
