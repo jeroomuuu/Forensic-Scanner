@@ -543,9 +543,19 @@ def solve_mystery_target(mystery_target_name, Matrix_A=None, labels=None, save_p
 
     if mode == 'micro':
         n_pct = percent_dict.get('Pure_N', 0.0); o_pct = percent_dict.get('Pure_O', 0.0)
-        if n_pct > 0.5 or (n_pct > 0.2 and o_pct > 1.0):
-            threat_detected = True
-            print("\n⚠️ STOICHIOMETRIC ANOMALY: Nitrogen/Oxygen density exceeds background clutter limits!")
+        # 1. Standard Nitrogen Explosive Trigger
+    if n_pct > 0.5 or (n_pct > 0.2 and o_pct > 1.0):
+        threat_detected = True
+        print("\n⚠️ STOICHIOMETRIC ANOMALY: Nitrogen density exceeds background clutter limits!")
+
+        # 2. NEW: The Ghost Explosive Trigger (TATP/Peroxides)
+        # b[0] = Carbon 4.44 MeV ROI | b[1] = Oxygen 6.13 MeV ROI
+        if b[0] > 0:
+            o_c_ratio = b[1] / b[0]
+            # If the Oxygen/Carbon ratio is unusually high, and there is NO Nitrogen...
+            if o_c_ratio > 0.8 and n_pct < 0.2:
+                threat_detected = True
+                print(f"\n👻 GHOST ANOMALY: Abnormal Fast O/C ratio ({o_c_ratio:.2f}) with ZERO Nitrogen! Peroxide threat (TATP) det>
 
     print(f"------------------------------------------------------------\n 📉 Mathematical Residual (Unexplained Noise): {residue:.6f}")
     print("\n🔴 STATUS: RED ALARM - EXPLOSIVE SIGNATURE UNMIXED" if threat_detected else "\n🟢 STATUS: GREEN - No threat detected")
