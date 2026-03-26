@@ -48,7 +48,7 @@ V1.6:
 - Tuned & expanded low-energy ROIs (x-ray and photon)
 - Something something - i forgot
 
-V1.7: ( latest stable )
+V1.7:
 
 - Added Cu, Zn, Ga X-ray clusters + more Fe-59 lines
 - Finetuned a tiny bit more
@@ -60,9 +60,11 @@ V1.8: ( borked )
 - Threat probability warning for >80%
 - No breakage to any previous features
 
-V1.9 ( More borked )
+V1.9: Problems fixed
 
-- ???
+- Better math
+
+
 
 ###### python forensic-scanner-1.8.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
 
