@@ -68,15 +68,9 @@ V1.9: Problems fixed
 
 V2.0: OUT NOW
 
-
-
-
+---
 
 ###### python forensic-scanner-1.8.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
-
-
-
-
 
 ### Roadmap
 
