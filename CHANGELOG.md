@@ -63,6 +63,8 @@ V1.8: ( borked )
 V1.9: Problems fixed
 
 - Better math
+- Solver now also works with other target compositions, like "TATP_Ghost"
+- 
 
 
 
