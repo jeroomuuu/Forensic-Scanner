@@ -366,10 +366,14 @@ def bayesian_nnfl_analysis(x_nnls, Matrix_A, labels, prior_alpha=1.0):
 def calculate_detector_volume():
     global detector_volume
     print("\n[SYSTEM] Pre-calculating stochastic volume for physics normalization...")
+
     vol_calc = openmc.VolumeCalculation([detector_cell], samples=100000, lower_left=[-80,-80,-80], upper_right=[80,80,80])
     settings_vol = openmc.Settings(); settings_vol.volume_calculations = [vol_calc]; settings_vol.run_mode = 'volume'
-    geom.export_to_xml(); settings_vol.export_to_xml(); openmc.Materials(list(csg_materials.values()) + [air]).export_to_xml()
+        
+    geom.export_to_xml(); settings_vol.export_to_xml()
+    openmc.Materials(geom.get_all_materials().values()).export_to_xml()   
     openmc.Tallies().export_to_xml(); openmc.calculate_volumes(output=False)
+    
     try:
         vol_stat = openmc.VolumeCalculation.from_hdf5('volume_1.h5')
         detector_volume = vol_stat.volumes[detector_cell.id].n
