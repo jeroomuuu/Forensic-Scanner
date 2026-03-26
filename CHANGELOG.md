@@ -46,14 +46,19 @@ V1.5:
 V1.6:
 
 - Tuned & expanded low-energy ROIs (x-ray and photon)
+- Something something - i forgot
 
 V1.7:
 
 - Added Cu, Zn, Ga X-ray clusters + more Fe-59 lines
+- Finetuned a tiny bit more
 
 V1.8:
 
-- Bayesian / NNFL layer added, probabilistic attribution instead of just NNLS percentages
+- Bayesian_nnfl_analysis() function present and called correctly
+- Dirichlet posterior + 95% credible intervals printing
+- Threat probability warning for >80%
+- No breakage to any previous features
 
 
 #### Roadmap
