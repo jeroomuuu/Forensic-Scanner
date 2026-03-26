@@ -60,7 +60,7 @@ V1.8:
 - Threat probability warning for >80%
 - No breakage to any previous features
 
-###### more complex pargs lol :
+
 ###### python forensic-scanner-1.8.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
 
 
