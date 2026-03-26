@@ -45,15 +45,15 @@ V1.5:
 
 V1.6:
 
-- Tune & expand low-energy ROIs
+- Tuned & expanded low-energy ROIs (x-ray and photon)
 
 V1.7:
 
-- Add Cu, Zn, Ga X-ray clusters + more Fe-59 lines
+- Added Cu, Zn, Ga X-ray clusters + more Fe-59 lines
 
 V1.8:
 
-- Bayesian / NNFL layer, probabilistic attribution instead of just NNLS percentages
+- Bayesian / NNFL layer added, probabilistic attribution instead of just NNLS percentages
 
 
 #### Roadmap
