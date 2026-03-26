@@ -328,27 +328,32 @@ def delayed_low_energy_analysis(mean_low_spectrum, energies_low, threshold_sigma
     return roi_net, warnings
 
 # ==========================================
-# 6. BAYESIAN NNFL LAYER (fixed for SciPy)
+# 6. BAYESIAN NNFL LAYER
 # ==========================================
 def bayesian_nnfl_analysis(x_nnls, Matrix_A, labels, prior_alpha=1.0):
     """Dirichlet posterior update for compositional attribution (NNFL-style)."""
+    # 1. Normalize x_nnls to 1.0 so the confidence scalar always works mathematically
+    x_norm = x_nnls / (np.sum(x_nnls) + 1e-12) if np.sum(x_nnls) > 0 else np.zeros_like(x_nnls)
+    
     alpha_prior = np.full_like(x_nnls, prior_alpha)
-    alpha_post = alpha_prior + x_nnls * 1000.0   # scaling factor for sharpness
-    
-    # CORRECTED: Create the frozen distribution first
+    # 2. Apply the scalar to the normalized array
+    alpha_post = alpha_prior + (x_norm * 1000.0)   
     post = dirichlet(alpha_post)
-    
     mean_post = post.mean()
-    lower, upper = post.interval(0.95)
+    
+    samples = post.rvs(size=10000)
+    lower = np.percentile(samples, 2.5, axis=0)
+    upper = np.percentile(samples, 97.5, axis=0)
+    # ... (the rest of the function stays exactly the same)
+    # ---------------------------------------------------------------------------
     
     print("\n[NNFL BAYESIAN POSTERIOR]")
     print("Material                  Posterior %    95% Credible Interval")
     print("-" * 70)
     for i, label in enumerate(labels):
-        if mean_post[i] > 0.001:
+        if mean_post[i] > 0.001:  
             print(f"{label:24} {mean_post[i]*100:6.1f}%       [{lower[i]*100:5.1f} – {upper[i]*100:5.1f}]%")
     
-    # Threat confidence
     threat_idx = [i for i, l in enumerate(labels) if l in ['TNT', 'RDX', 'TATP_Ghost', 'Threat_NQ']]
     threat_prob = sum(mean_post[i] for i in threat_idx) if threat_idx else 0.0
     if threat_prob > 0.80:
