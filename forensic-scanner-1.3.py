@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ==============================================================================
-# 🧠 FORENSIC SCANNER V2.0_alpha
+# 🧠 FORENSIC SCANNER V1.3
 # Pulsed D-T + Real N-16 Activation + 5D Layered Tallies + Per-MeV PNGs + GIF
 # ==============================================================================
 
