@@ -64,8 +64,9 @@ V1.9: Problems fixed
 
 - Better math
 - Solver now also works with other target compositions, like "TATP_Ghost"
-- 
+- Bugfixes all the way to 2.0
 
+V2.0: OUT NOW
 
 
 ###### python forensic-scanner-1.8.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
