@@ -1,6 +1,8 @@
 # Forensic Scanner V2.0    : Monte Carlo PFTNA Engine
 
-<img width="1000" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Visual.png" />
+<img width="auto" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Threat_NQ_Visual.png"/>
+<img width="auto" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_TATP_Ghost_Visual.png"/>
+
 
 ###### This system uses OpenMC to fire 14 MeV neutrons into complex 3D CSG geometries (like shielded luggage), tracks subatomic particle collisions, and uses a Non-Negative Least Squares (NNLS) solver to mathematically unmix and identify hidden explosive threats from the resulting gamma-ray spectra.
 
