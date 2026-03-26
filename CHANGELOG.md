@@ -39,3 +39,24 @@ V1.5
 - Beautiful orange-shaded Fe K X-ray cluster in the new low-energy inset
 - Pulsed D-T, 5D layered tallies, GIFs, per-MeV PNGs, N-16 injection, and delayed low-energy X-ray monitoring
 - All global variables and unpacking fixed (no more NameError hell)
+
+V1.6 [Proposed Updates]
+
+- Tune & expand low-energy ROIs
+
+V1.7 [Proposed Updates]
+
+- Add Cu, Zn, Ga X-ray clusters + more Fe-59 lines
+
+V1.8 [Proposed Updates]
+
+- Bayesian / NNFL layer, probabilistic attribution instead of just NNLS percentages
+
+V1.9 [Proposed Updates]
+
+- DAGMC CAD import for real suitcase STL files in instead of CSG boxes
+
+V2.0 [Proposed Updates]
+
+- Cluster watchdog script for Vast.ai API (one VM per element, auto-assemble etc etc).
+
