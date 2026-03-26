@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # ==============================================================================
-# 🧠 DUAL-MODE NNLS TOMOGRAPHY & SCANNER V1.2a (Pulsed D-T + Real N-16 Activation)
+# 🧠 DUAL-MODE NNLS TOMOGRAPHY & SCANNER V1.2 (Pulsed D-T + Real N-16 Activation)
 # ==============================================================================
 
 import os
