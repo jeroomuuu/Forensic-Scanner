@@ -1,4 +1,4 @@
-# Forensic Scanner V1.9    : Monte Carlo PFTNA Engine
+# Forensic Scanner V2.0    : Monte Carlo PFTNA Engine
 
 <img width="1000" height="auto" alt="BigIntro" src="https://github.com/jeroomuuu/Forensic-Scanner/blob/main/Scan_Report_Visual.png" />
 
@@ -57,23 +57,24 @@ You can run these in either macro (full spectrum) or micro (ROI-Barcoded) modes
 
 ### Step 2.1: Build the Transformation Matrix
 
-    python forensic-scanner-1.9.py --build-matrix --mode micro
-    python forensic-scanner-1.9.py --build-matrix --mode macro
+    python forensic-scanner-2.0.py --build-matrix --mode micro
+    python forensic-scanner-2.0.py --build-matrix --mode macro
 
 ### Step 2.2: Run a detection scan
 
-    python forensic-scanner-1.9.py --solve Threat_NQ --use-csg --mode micro
-    python forensic-scanner-1.9.py --solve Threat_NQ --use-csg --mode macro
+    python forensic-scanner-2.0.py --solve Threat_NQ --use-csg --mode micro
+    python forensic-scanner-2.0.py --solve Threat_NQ --use-csg --mode macro
 
 ### Step 2.2 1/2: Do some more brain
 
-    python forensic-scanner-1.9.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
+    python forensic-scanner-2.0.py --solve Threat_NQ --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
+    python forensic-scanner-2.0.py --solve TATP_Ghost --use-csg --mode macro --use-layers --use-delayed-low --use-bayesian-nnfl
 
 ### Step 2.3: Options to check beam output visually
 
 
-    python forensic-scanner-1.9.py --check-geometry fan
-    python forensic-scanner-1.9.py --check-geometry cone
+    python forensic-scanner-2.0.py --check-geometry fan
+    python forensic-scanner-2.0.py --check-geometry cone
 
 
 ## Tweaking Settings
