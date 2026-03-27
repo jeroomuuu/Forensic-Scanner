@@ -66,11 +66,12 @@ V1.9: Problems fixed
 - Solver now also works with other target compositions, like "TATP_Ghost"
 - Bugfixes all the way to 2.0
 
-V2.0: OUT NOW
+V2.0.1: OUT NOW
 
 - All works and now building 1B particle matrices
 - For future upgrade to machine learning -> V3.0
 - Small bugfix in V2.0.1
+
 
 ---
 
@@ -81,12 +82,11 @@ V2.0: OUT NOW
 
 - Full PyMC MCMC upgrade ->
 - Probabilistic inference layer (PyMC, Pyro, TensorFlow Probability, etc.)
-
 - DAGMC CAD import for real suitcase STL files in instead of CSG boxes
 - Cluster watchdog script for Vast.ai API (one VM per element, auto-assemble etc etc).
 
 - Models with:
-
+- Collision Track list-mode digitizer
 - Posterior distributions instead of point estimates
 - Credible intervals on every material percentage
 - Proper uncertainty propagation
