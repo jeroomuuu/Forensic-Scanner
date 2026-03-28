@@ -1,6 +1,6 @@
 #### CHANGELOG
 
-V0.0 -> V0.9:
+V0.01 -> V0.99:
 
 - Moved to private repo
 
@@ -53,7 +53,7 @@ V1.7:
 - Added Cu, Zn, Ga X-ray clusters + more Fe-59 lines
 - Finetuned a tiny bit more
 
-V1.8: ( borked )
+V1.8:
 
 - Bayesian_nnfl_analysis() function present and called correctly
 - Dirichlet posterior + 95% credible intervals printing
@@ -66,11 +66,15 @@ V1.9: Problems fixed
 - Solver now also works with other target compositions, like "TATP_Ghost"
 - Bugfixes all the way to 2.0
 
-V2.0.1: OUT NOW
+V2.0.1: - Stable - OUT NOW
 
-- All works and now building 1B particle matrices
-- For future upgrade to machine learning -> V3.0
-- Small bugfix in V2.0.1
+- Small bugfix from V2.0
+- 5d Mappings of Neutron Flux
+- 2d layered neutron png output per MeV channel
+- ready for future ml tensors
+
+###### Run the micro and macro builds with high particle / batch counts on a cpu cluster ( 1T+ per vector) , then run the solver on the Tensor driven GPU.
+###### Connect the GPU machine via datalink to the larger matrix sets on the cpu cluster. This way the ground truth has almost a net zero error rate to start.
 
 
 ---
@@ -79,14 +83,14 @@ V2.0.1: OUT NOW
 
 #### [Proposed Updates]
 
-
+- Stochastic Noise Injection
 - Full PyMC MCMC upgrade ->
 - Probabilistic inference layer (PyMC, Pyro, TensorFlow Probability, etc.)
 - DAGMC CAD import for real suitcase STL files in instead of CSG boxes
 - Cluster watchdog script for Vast.ai API (one VM per element, auto-assemble etc etc).
 
 - Models with:
-- Collision Track list-mode digitizer
+- Collision Tracking list-mode digitizer
 - Posterior distributions instead of point estimates
 - Credible intervals on every material percentage
 - Proper uncertainty propagation
